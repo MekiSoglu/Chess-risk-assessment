@@ -1,0 +1,12 @@
+
+r
+java:S1066K"/Merge this if statement with the enclosing one.(±ÃÕÒ8«åÌ†2J$2a30f402-eed1-49c9-8d66-bf3d6e7270d0
+]
+java:S1220""Move this file to a named package.8áí”Ç†2J$42c04fe0-7ea5-4e71-909a-67e731a2e21a
+ 	java:S135%"YReduce the total number of break and continue statements in this loop to use at most one.(£ »íøÿÿÿÿ8¬åÌ†2J$edd5adad-2ef0-4a33-8811-5b5c1da810ba
+‡
+java:S6201"DReplace this instanceof check and cast with 'instanceof Horse horse'(—„¶Ù8¯åÌ†2J$9cdf1ec7-efd9-4b97-8ab6-91b8adacdc12
+š
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(ÎŽ™°þÿÿÿÿ8°åÌ†2J$7eb56a83-09ff-477e-8c01-a8cea2294d98
+o
+java:S1905>"'Remove this unnecessary cast to "char".(Îç·ðþÿÿÿÿ8˜ø‡ó†2J$8545673d-8b44-441e-be6f-7251cb5f0861
