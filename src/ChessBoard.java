@@ -11,7 +11,7 @@ public class ChessBoard {
         pieces = new ArrayList<>();
         initializeBoard();
     }
-
+// boş bir satranç tahtası oluşturma
     private void initializeBoard() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
@@ -21,7 +21,7 @@ public class ChessBoard {
             }
         }
     }
-
+// taşları satranç tahtasına yerleştirme
     public void loadFromFile(String filename) {
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
@@ -62,7 +62,7 @@ public class ChessBoard {
             e.printStackTrace();
         }
     }
-
+//belirtilen konumda bir taşın olup olmadığı
     public double[] getPiece(int row, int col) {
         if (board[row][col][0] != -1) {
             return new double[] { board[row][col][0], board[row][col][1], board[row][col][2] };

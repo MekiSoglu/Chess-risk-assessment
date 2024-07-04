@@ -27,7 +27,7 @@ public class RiskCalculator {
             evaluateDirection(board, piece, direction[0], direction[1]);
         }
     }
-
+// at dışındaki bütün taşlar için risk hesabı
     private void evaluateDirection(ChessBoard board, Piece piece, int dx, int dy) {
         int newX = piece.getX() + dx;
         int newY = piece.getY() + dy;
@@ -58,13 +58,14 @@ public class RiskCalculator {
         return x >= 0 && x < 8 && y >= 0 && y < 8;
     }
 
+
     private void reduceRisk(double[] target, ChessBoard board, int x, int y) {
         char type = (char) PieceUtils.getTypeString((int) target[1]).charAt(0);
         double initialRisk = PieceUtils.getInitialRisk(type);
         target[2] = initialRisk / 2;
         board.updatePieceRisk(x, y, target[2]);
     }
-
+// at hareketleri diğer taşlardan farklı olduğu için özel bir metot oluşturulur
     private void calculateHorseRisk(ChessBoard board, Horse horse) {
         List<int[]> moves = horse.getPossibleMoves(board);
         for (int[] move : moves) {
